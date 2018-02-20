@@ -1,3 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Mon, 29 Jan 2018 17:49:06 GMT" time="12.569">
-<testcase classname="example_wikipedia_test.js" name="example_wikipedia_test" time="12.566"/>
-</testsuite>
