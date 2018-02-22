@@ -10,6 +10,8 @@ const webdriver = require('selenium-webdriver'),
 By = webdriver.By,
 until = webdriver.until;
 
+console.log("Hello World!");
+
 describe(path.basename(__filename), function() {
   // --enter test case name (ie. 'example test case')
   test.it('{-name-}', function(done) {
