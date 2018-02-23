@@ -6,9 +6,11 @@ const webdriver = require('selenium-webdriver'),
 By = webdriver.By,
 until = webdriver.until;
 
+console.log("Hello World!");
+
 describe(path.basename(__filename), function() {
   // --enter test case name (ie. 'example test case')
-  test.it('sample-test', function(done) {
+  test.it('example_wikipedia_test', function(done) {
     this.timeout(0);
     var driver = new webdriver.Builder()
     .forBrowser('firefox')
@@ -23,11 +25,18 @@ describe(path.basename(__filename), function() {
     //   driver.sleep(1000);
     // });
 
-    driver.get("https://www.google.com"+"/");
-		driver.findElement(By.id("lst-ib")).sendKeys('wikipedia');
-		driver.findElement(By.id("lst-ib")).sendKeys('wikipedia');
+    driver.get("https://www.wikipedia.org"+"/");
+		driver.sleep('2000');
+		driver.findElement(By.id("searchInput")).sendKeys('selenium');
+		driver.sleep('2000');
+		driver.findElement(By.css("button.pure-button.pure-button-primary-progressive")).click();
+		driver.sleep('3000');
+		driver.getTitle().then(title=> {
+			assert(title == 'Selenium - Wikipedia');
+			done();
+		});
 		
-		done();
+
     driver.close();
   });
 })

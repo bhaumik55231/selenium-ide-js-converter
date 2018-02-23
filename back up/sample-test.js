@@ -27,7 +27,7 @@ describe(path.basename(__filename), function() {
 		driver.findElement(By.id("lst-ib")).sendKeys('wikipedia');
 		driver.findElement(By.id("lst-ib")).sendKeys('wikipedia');
 		
-		done();
+
     driver.close();
   });
 })
