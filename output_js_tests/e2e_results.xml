@@ -1,4 +1,4 @@
-<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Fri, 23 Feb 2018 15:57:53 GMT" time="22.8">
-<testcase classname="example_wikipedia_test.js" name="example_wikipedia_test" time="15.152"/>
-<testcase classname="sample-test.js" name="sample-test" time="7.642"/>
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Mon, 26 Feb 2018 20:00:13 GMT" time="35.94">
+<testcase classname="example_wikipedia_test.js" name="example_wikipedia_test" time="28.372"/>
+<testcase classname="sample-test.js" name="sample-test" time="7.561"/>
 </testsuite>
